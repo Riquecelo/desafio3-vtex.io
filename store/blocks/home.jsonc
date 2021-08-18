@@ -1,154 +1,22 @@
 {
   "store.home": { 
     "blocks": [
-      "tab-layout#home",
-      "rich-text",
-      "slider-layout#text-test",
       
-      "flex-layout.row"
-    ]
-  },
-
-  "tab-layout#home": {
-    "children": [
-      "tab-list",
-      "tab-content"
+      "slider-layout#text"
       
     ]
-  },
-
-    
-  "tab-list": {
-    "children": [
-      "tab-list.item#1",
-      "tab-list.item#2"
-      ]
-  },
-
-  "tab-content": {
-    "children": [
-      "tab-content.item#1",
-      "tab-content.item#2"
-      ]
-  },
-
-
-  "tab-list.item#1": {
+  },"slider-layout#text": {
     "props": {
-      "tabId": "majorAppliances",
-      "label": "Major Appliances",
-      "defaultActiveTab": true
-    }
-  },
-  "tab-list.item#2": {
-    "props": {
-      "tabId": "electronics",
-      "label": "Electronics"
-    }
-  },
-
-    
-  "tab-content.item#1": {
-    "children": [
-      //"rich-text#1"
-    ],
-    "props": {
-      "tabId": "majorAppliances"
-    }
-  },
-  "tab-content.item#2": {
-    "children": [
-      //"rich-text#2"
-    ],
-    "props": {
-      "tabId": "electronics"
-    }
-  },
-/*
-  "rich-text#1": {
-    "props": {
-      "text": "Texto para Major Appliances",
-      "textPosition": "CENTER",
-      "font": "t-heading-3"
-    }
-  },
-  "rich-text#2": {
-    "props": {
-      "text": "Texto para Electronics",
-      "textPosition": "CENTER",
-      "font": "t-heading-3"
-    }
-  },
-*/
-
-  //---------------------//
-  "rich-text": { 
-    "props": { 
-      "text": "VTEX Store Framework",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
-  },
-  "flex-layout.row":{
-    "children": [
-      "info-card#rethink",
-      "flex-layout.col"
-    ]
-  },
-
- "info-card#rethink": {
-    "props": {
-      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/utensilios-cozinha-min.png",
-      "isFullModeStyle": true,
-      "headline": "Time to rethink your kitchen",
-      "callToActionText": "Discover",
-      "textPosition": "center"
-    }
-  },
-
-  "flex-layout.col":{
-    "children":[
-      "image#electronics",
-      "image#major-appliance"
-    ]
-      
-    
-  },
-  
-"image#electronics": {
-  "props": {
-    "src": "https://images.unsplash.com/photo-1619640956450-745e698b49da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80",
-    "maxWidth": "100%"
-  }
-},
-"image#major-appliance": {
-  "props": {
-    "src": "https://appliancetheme.vteximg.com.br/assets/vtex.file-manager-graphql/images/major_appliance_banner___bb10093866a127345ddfbcca3efa5022.png",
-    "maxWidth": "100%"
-  }
-},
-
-"slider-layout#text-test": {
-  "props": {
-    "itemsPerPage": {
-      "desktop": 1,
-      "tablet": 1,
-      "phone": 1
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
     },
-    "infinite": true,
-    "showNavigationArrows": "desktopOnly",
-    "blockClass": "carousel"
-  },
-  "children": ["image#electronics-one","image#major-appliance","image#electronics"]
-},
-"image#electronics-one":{
-  "props": {
-    "src": "https://images.unsplash.com/photo-1628934493970-7288e526dd32?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=890&q=80",
-    "maxWidth": "100%"
+    "children": []
   }
-}
-
-
 
 }
