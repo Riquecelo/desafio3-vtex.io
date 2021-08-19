@@ -1,11 +1,75 @@
 {
   "store.home": { 
     "blocks": [
+      
+      "tab-layout",
       "rich-text",
       "slider-layout#text"
-      
     ]
   },
+
+
+//-------- guias da página ---------//
+  "tab-layout":{
+    "children": [
+      "tab-list",
+      "tab-content"
+    ]
+  },
+  "tab-list": {
+    "children": [
+      "tab-list.item#1",
+      "tab-list.item#2",
+      "tab-list.item#3"
+      ]
+  },
+  "tab-content": {
+    "children": [
+      "tab-content.item#1",
+      "tab-content.item#2",
+      "tab-content.item#3"
+      ]
+  },
+  "tab-list.item#1": {
+    "props": {
+      "tabId": "produtos",
+      "label": "Produtos",
+      "defaultActiveTab": false
+    }
+  },
+  "tab-list.item#2": {
+    "props": {
+      "tabId": "bikes",
+      "label": "Bikes"
+    }
+  },
+  "tab-list.item#3": {
+    "props": {
+      "tabId": "capacetes",
+      "label": "Capacetes"
+    }
+  },
+  "tab-content.item#1": {
+    
+    "props": {
+      "tabId": "produtos"
+    }
+  },
+  "tab-content.item#2": {
+    
+    "props": {
+      "tabId": "bikes"
+    }
+  },
+  "tab-content.item#3": {
+    
+    "props": {
+      "tabId": "capacetes"
+    }
+  },
+
+
+//----------slider baner -------------//
   "slider-layout#text": {
     "props": {
       "itemsPerPage": {
@@ -24,35 +88,38 @@
   "image#brand1":{
     "props":{
       "src": "https://surlybikes.com/uploads/bikes/_medium_image/Karate_Monkey_SUS_BK0998_Background-2000x1333.jpg",
-      "maxWidth": "600",
-      "maxHeight": "500"
+      "blockClass": "carousel-img",
+      "title": "BiKe"
+
     }
   },
   "image#brand2":{
     "props":{
       "src": "https://surlybikes.com/uploads/bikes/_medium_image/ICT_BK1036-2000x1333.jpg",
-      "maxWidth": "600",
-      "maxHeight": "500"
+      "blockClass": "carousel-img"
     }
   },
   "image#brand3":{
     "props":{
-      "src": "https://surlybikes.com/uploads/bikes/Lowside_BK0534_Background-1200x800.jpg"
+      "src": "https://surlybikes.com/uploads/bikes/Lowside_BK0534_Background-1200x800.jpg",
+      "blockClass": "carousel-img"
     }
   },"image#brand4":{
     "props":{
-      "src": "https://surlybikes.com/uploads/bikes/ICT_BK0382_Background_1200x800_Color_Fix.jpg"
+      "src": "https://surlybikes.com/uploads/bikes/ICT_BK0382_Background_1200x800_Color_Fix.jpg",
+      "blockClass": "carousel-img"
     }
   },"image#brand5":{
     "props":{
       "src": "https://bikeaospedacos.com.br/wp-content/uploads/2020/08/Summa-EX-com-Fundo-PRETO-min.jpg",
-      "isFullModeStyle": true
+      "blockClass": "carousel-img"
     }
   },
 
+//------- texto de teste--------//  
   "rich-text": {
     "props": {
-      "text": "*Hello, World!*"
+      "text": "**UpMedal BIKES**"
     }
   }
 

@@ -1,5 +1,5 @@
-.imageElement{
-    Width: 700px;
-    Height: 200px;
+.imageElement--carousel-img{
+    width: 100%;
+    Height: 350px;
     border-radius: 15px;
 }
