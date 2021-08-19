@@ -1,22 +1,59 @@
 {
   "store.home": { 
     "blocks": [
-      
+      "rich-text",
       "slider-layout#text"
       
     ]
-  },"slider-layout#text": {
+  },
+  "slider-layout#text": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
       },
+      "fullWidth":true,
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     },
-    "children": []
+    "children": ["image#brand1","image#brand2","image#brand3","image#brand4","image#brand5"]
+  },
+
+  "image#brand1":{
+    "props":{
+      "src": "https://surlybikes.com/uploads/bikes/_medium_image/Karate_Monkey_SUS_BK0998_Background-2000x1333.jpg",
+      "maxWidth": "600",
+      "maxHeight": "500"
+    }
+  },
+  "image#brand2":{
+    "props":{
+      "src": "https://surlybikes.com/uploads/bikes/_medium_image/ICT_BK1036-2000x1333.jpg",
+      "maxWidth": "600",
+      "maxHeight": "500"
+    }
+  },
+  "image#brand3":{
+    "props":{
+      "src": "https://surlybikes.com/uploads/bikes/Lowside_BK0534_Background-1200x800.jpg"
+    }
+  },"image#brand4":{
+    "props":{
+      "src": "https://surlybikes.com/uploads/bikes/ICT_BK0382_Background_1200x800_Color_Fix.jpg"
+    }
+  },"image#brand5":{
+    "props":{
+      "src": "https://bikeaospedacos.com.br/wp-content/uploads/2020/08/Summa-EX-com-Fundo-PRETO-min.jpg",
+      "isFullModeStyle": true
+    }
+  },
+
+  "rich-text": {
+    "props": {
+      "text": "*Hello, World!*"
+    }
   }
 
 }
