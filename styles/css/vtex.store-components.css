@@ -3,3 +3,7 @@
     Height: 350px;
     border-radius: 15px;
 }
+.searchBarContainer{
+    width: 700px;
+    text-align: center;
+}
