@@ -87,7 +87,8 @@
 
   "image#brand1":{
     "props":{
-      "src": "https://surlybikes.com/uploads/bikes/_medium_image/Karate_Monkey_SUS_BK0998_Background-2000x1333.jpg",
+      "src": "assets/bike-upMedal.jpg",
+      //"src": "https://surlybikes.com/uploads/bikes/_medium_image/Karate_Monkey_SUS_BK0998_Background-2000x1333.jpg",
       "blockClass": "carousel-img",
       "title": "BiKe"
 
